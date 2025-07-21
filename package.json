@@ -1,0 +1,15 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "A minimal static CV website.",
+  "main": "index.html",
+  "scripts": {
+    "start": "bunx serve ."
+  },
+  "keywords": [],
+  "author": "Anton Chernookiy",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

@@ -1,0 +1,391 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Richard Mathews - Resume</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-text: #333;
+        --secondary-text: #666;
+        --border-color: #e0e0e0;
+        --background: #fff;
+        --section-gap: 32px;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        padding: 40px;
+        background: var(--background);
+        color: var(--primary-text);
+        line-height: 1.6;
+      }
+
+      .resume {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        padding: 40px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        margin-bottom: var(--section-gap);
+      }
+
+      .profile-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .header-content h1 {
+        font-size: 32px;
+        margin: 0 0 4px 0;
+        color: var(--primary-text);
+        font-weight: 600;
+      }
+
+      .header-content h2 {
+        font-size: 18px;
+        color: var(--secondary-text);
+        margin: 0 0 16px 0;
+        font-weight: 500;
+      }
+
+      .contact-info {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        font-size: 14px;
+      }
+
+      .contact-info span {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--secondary-text);
+      }
+
+      .main-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+      }
+
+      .section {
+        margin-bottom: var(--section-gap);
+      }
+
+      .section h3 {
+        font-size: 20px;
+        color: var(--primary-text);
+        margin: 0 0 16px 0;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .experience-item {
+        margin-bottom: 24px;
+      }
+
+      .experience-item h4 {
+        font-size: 16px;
+        margin: 0 0 4px 0;
+        color: var(--primary-text);
+        font-weight: 600;
+      }
+
+      .experience-item .period {
+        color: var(--secondary-text);
+        font-size: 14px;
+        margin: 0 0 8px 0;
+      }
+
+      .experience-item p {
+        margin: 0;
+        color: var(--secondary-text);
+        font-size: 14px;
+      }
+
+      .skills-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .skills-list li {
+        margin-bottom: 8px;
+        color: var(--secondary-text);
+        font-size: 14px;
+      }
+
+      .skills-category {
+        margin-bottom: 16px;
+      }
+
+      .skills-category h4 {
+        font-size: 16px;
+        margin: 0 0 8px 0;
+        color: var(--primary-text);
+        font-weight: 500;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 20px;
+        }
+
+        .resume {
+          padding: 20px;
+        }
+
+        .main-content {
+          grid-template-columns: 1fr;
+        }
+
+        .header {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .contact-info {
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume">
+      <header class="header">
+        <img
+          src="https://via.placeholder.com/120"
+          alt="Profile"
+          class="profile-image"
+        />
+        <div class="header-content">
+          <h1>Richard Mathews</h1>
+          <h2>Product Designer</h2>
+          <div class="contact-info">
+            <span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M3 5L12 14L21 5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+              hello@richardmathews.com
+            </span>
+            <span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 5.5C3 14.06 9.94 21 18.5 21C19.0523 21 19.5 20.5523 19.5 20V16.5C19.5 15.9477 19.0523 15.5 18.5 15.5C17.2703 15.5 16.0709 15.2976 14.9516 14.9159C14.4566 14.7521 13.9248 14.9039 13.6065 15.3224L11.6065 17.3224C9.91897 16.2289 8.27106 14.581 7.17753 12.8935L9.17753 10.8935C9.59601 10.5752 9.74788 10.0434 9.58407 9.54839C9.20238 8.42911 9 7.22973 9 6C9 5.44772 8.55228 5 8 5H4.5C3.94772 5 3.5 5.44772 3.5 6C3.5 6.00001 3.5 6.00001 3.5 6.00002"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+              +44 2356-3356-1200
+            </span>
+            <span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path d="M3.6 8H20.4" stroke="currentColor" stroke-width="2" />
+                <path d="M3.6 16H20.4" stroke="currentColor" stroke-width="2" />
+                <path
+                  d="M12 20.4C14.6392 20.4 16.8 16.6392 16.8 12C16.8 7.36081 14.6392 3.6 12 3.6C9.36081 3.6 7.2 7.36081 7.2 12C7.2 16.6392 9.36081 20.4 12 20.4Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+              www.richardmathews.com
+            </span>
+            <span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M6 19H18C18 15.6863 15.3137 13 12 13C8.68629 13 6 15.6863 6 19Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+              St. Park Avenue, Krakow, Poland
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <div class="main-content">
+        <div class="left-column">
+          <section class="section">
+            <h3>Profile</h3>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit.
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>Experience</h3>
+            <div class="experience-item">
+              <h4>Name of Company</h4>
+              <div class="period">Your Job Title | 2023 - 2024</div>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo nemo enim ipsam.
+              </p>
+              <ul class="experience-details">
+                <li>
+                  Dolor Job description here omnis iste natus error sit
+                  voluptatem
+                </li>
+                <li>
+                  Totam rem aperiam, eaque ipsa quae ab illo lentore entias
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <h4>Name of Company</h4>
+              <div class="period">Your Job Title | 2022 - 2023</div>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo nemo enim ipsam.
+              </p>
+              <ul class="experience-details">
+                <li>
+                  Omnis iste natus error sit voluptatem omnis istrque lorem
+                  ipsum
+                </li>
+                <li>
+                  Dolor Job description here omnis iste natus error sit
+                  voluptatem
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <h4>Name of Company</h4>
+              <div class="period">Your Job Title | 2021 - 2022</div>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo nemo enim ipsam.
+              </p>
+              <ul class="experience-details">
+                <li>
+                  Omnis iste natus error sit voluptatem omnis istrque lorem
+                  ipsum
+                </li>
+                <li>
+                  Dolor Job description here omnis iste natus error sit
+                  voluptatem
+                </li>
+                <li>
+                  Totam rem aperiam, eaque ipsa quae ab illo lentore entias
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div class="right-column">
+          <section class="section">
+            <h3>Skills</h3>
+            <div class="skills-category">
+              <h4>10 Years of Professional</h4>
+              <ul class="skills-list">
+                <li>Design</li>
+                <li>XTML</li>
+                <li>Interaction Design</li>
+                <li>iOS Design</li>
+                <li>UI / UX</li>
+                <li>Web Design</li>
+                <li>Packaging Design</li>
+                <li>Logo Design</li>
+                <li>Design Management</li>
+                <li>CSS / PHP</li>
+                <li>Presentation</li>
+                <li>Social Marketing</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h4>Expertise of Tools & Technical</h4>
+              <ul class="skills-list">
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>InDesign</li>
+                <li>Figma</li>
+                <li>Sketch</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
