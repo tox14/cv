@@ -3,13 +3,21 @@
   "version": "1.0.0",
   "description": "A minimal static CV website.",
   "main": "index.html",
+  "type": "module",
   "scripts": {
-    "start": "bunx serve ."
+    "start": "bunx serve .",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "Anton Chernookiy",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.3",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
     "serve": "^14.2.1"
   }
 }
