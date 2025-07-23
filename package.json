@@ -5,7 +5,7 @@
   "main": "index.html",
   "type": "module",
   "scripts": {
-    "start": "bunx serve .",
+    "start": "bun serve .",
     "lint": "eslint . --ext .js",
     "format": "prettier --write ."
   },
