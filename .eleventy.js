@@ -3,6 +3,8 @@ import { readFileSync } from 'node:fs';
 import { I18nPlugin } from '@11ty/eleventy';
 
 export default function (eleventyConfig) {
+  eleventyConfig.addWatchTarget('styles.css');
+
   eleventyConfig.addPlugin(I18nPlugin, {
     defaultLanguage: 'ru',
     errorMode: 'allow-fallback',

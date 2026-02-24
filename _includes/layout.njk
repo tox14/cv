@@ -17,11 +17,12 @@
           <h2 class="uppercase">{{ data[lang].position }}</h2>
         </div>
       </header>
-      <div class="language-switcher">
-        {% for code, value in data %}
-          <a class="language-btn{% if lang == code %} active{% endif %}" href="/{{ code }}/">{{ code | upper }}</a>
-        {% endfor %}
-      </div>
+    </div>
+
+    <div class="language-switcher">
+      {% for code, value in data %}
+        <a class="language-btn{% if lang == code %} active{% endif %}" href="/{{ code }}/">{{ code | upper }}</a>
+      {% endfor %}
     </div>
   </body>
 </html>
