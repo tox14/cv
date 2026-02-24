@@ -40,10 +40,12 @@
   gap: 10px;
 }
 .language-btn {
+  display: inline-block;
   padding: 8px 16px;
   border: 2px solid #333;
   background: transparent;
-  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
   transition: all 0.3s ease;
   font-weight: bold;
 }

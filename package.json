@@ -1,18 +1,8 @@
 {
   "name": "cv",
   "version": "1.0.0",
-  "description": "A minimal static CV website.",
-  "main": "index.html",
-  "type": "module",
-  "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
-    "lint": "eslint . --ext .js",
-    "format": "prettier --write ."
-  },
-  "keywords": [],
   "author": "Anton Chernookiy",
-  "license": "ISC",
+  "main": "index.html",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "bun": "^1.3.9",
@@ -23,8 +13,14 @@
     "html-minifier-terser": "^7.2.0",
     "prettier": "^3.8.1"
   },
-  "dependencies": {
-    "i18next": "^25.8.13",
-    "i18next-browser-languagedetector": "^8.2.1"
-  }
+  "description": "A minimal static CV website.",
+  "keywords": [],
+  "license": "ISC",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write ."
+  },
+  "type": "module"
 }
