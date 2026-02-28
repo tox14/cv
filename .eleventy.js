@@ -5,6 +5,8 @@ import { I18nPlugin } from '@11ty/eleventy';
 export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget('styles.css');
 
+  eleventyConfig.addPassthroughCopy('**/*.png');
+
   eleventyConfig.addPlugin(I18nPlugin, {
     defaultLanguage: 'ru',
     errorMode: 'allow-fallback',
