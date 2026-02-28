@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "Anton Chernookiy",
   "main": "index.html",
+  "type": "module",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "bun": "^1.3.9",
@@ -21,6 +22,5 @@
     "build": "eleventy",
     "lint": "eslint . --ext .js",
     "format": "prettier --write ."
-  },
-  "type": "module"
+  }
 }

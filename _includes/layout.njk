@@ -10,11 +10,11 @@
     <div class="container">
       <header class="block">
         <div class="block_left">
-          <h2 class="uppercase">{{ data[lang].resume }}</h2>
+          <h2>{{ data[lang].resume }}</h2>
         </div>
         <div class="block_right">
           <h1>{{ data[lang].name }}</h1>
-          <h2 class="uppercase">{{ data[lang].position }}</h2>
+          <h2>{{ data[lang].position }}</h2>
         </div>
       </header>
     </div>
@@ -23,6 +23,7 @@
       {% for code, value in data %}
         <a class="language-btn{% if lang == code %} active{% endif %}" href="/{{ code }}/">{{ code | upper }}</a>
       {% endfor %}
+      <button id="download-pdf" class="language-btn">{{ data[lang].download_pdf }}</button>
     </div>
   </body>
 </html>

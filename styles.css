@@ -31,10 +31,6 @@
   }
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
-
 /* Language switcher */
 .language-switcher {
   position: fixed;
@@ -54,6 +50,7 @@
   color: inherit;
   transition: all 0.3s ease;
   font-weight: bold;
+  cursor: pointer;
 }
 .language-btn.active {
   background: #333;
