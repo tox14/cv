@@ -20,9 +20,13 @@ export default {
         href: 'https://www.antonchernookiy.by',
       },
     ],
-    address: {
+    location: {
       country: 'Belarus',
       city: 'Minsk',
+    },
+    about: {
+      title: 'Profile',
+      text: "Developing web interfaces is my hobby and my passion. I'm focused on quality and speed of development. I love doing pixel-perfect markup. I enjoy bringing the client's wishes and the designer's vision to life in real interfaces that people use.",
     },
   },
   ru: {
@@ -46,9 +50,13 @@ export default {
         href: 'https://www.antonchernookiy.by',
       },
     ],
-    address: {
+    location: {
       country: 'Беларусь',
       city: 'Минск',
+    },
+    about: {
+      title: 'Обо мне',
+      text: 'Разработка веб-интерфейсов - это моё хобби и моя страсть. Сосредоточен на качестве и скорости разработки. Люблю верстать в стиле pixel-perfect. Мне нравится воплощать желания заказчика и видение дизайнера в реальных интерфейсах, которыми пользуются люди.',
     },
   },
 };

@@ -32,6 +32,20 @@
           </div>
         </div>
       </div>
+
+      <main class="block">
+        <div class="block__left block__left--bordered">
+          <p class="location-country">
+            <img src="/assets/location_icon.svg" alt="" aria-hidden="true" />
+            {{ data[lang].location.country }}
+          </p>
+          <p class="location-city">{{ data[lang].location.city }}</p>
+        </div>
+        <section class="block__right">
+          <h2 class="block__title">{{ data[lang].about.title }}</h2>
+          <p class="block__text">{{ data[lang].about.text }}</p>
+        </section>
+      </main>
     </div>
 
     <div class="language-switcher">
