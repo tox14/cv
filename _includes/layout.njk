@@ -77,11 +77,16 @@
       </main>
     </div>
 
-    <div class="language-switcher">
-      {% for code, value in data %}
-        <a class="language-btn{% if lang == code %} active{% endif %}" href="/{{ code }}/">{{ code | upper }}</a>
-      {% endfor %}
-      <button id="download-pdf" class="language-btn">{{ data[lang].download_pdf }}</button>
+    <div class="action-panel">
+      <div class="language-switch">
+        {% for code, value in data %}
+          <a class="language-switch__option{% if lang == code %} active{% endif %}" href="/{{ code }}/">{{ code | upper }}</a>
+        {% endfor %}
+      </div>
+      <button id="download-pdf" class="download-btn">
+        <img src="/assets/download_icon.svg" alt="PDF" aria-hidden="true" />
+        <span>PDF</span>
+      </button>
     </div>
   </body>
 </html>

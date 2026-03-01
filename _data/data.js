@@ -6,7 +6,6 @@ export default {
     position: 'Frontend Developer',
     profile_photo: '/assets/profile_photo.png',
     profile_photo_alt: 'Frontend Developer CV profile photo',
-    download_pdf: 'Download PDF',
     contacts: [
       { label: 'P', text: '+375 29 991-40-17', href: 'tel:+375299914017' },
       {
@@ -80,7 +79,6 @@ export default {
     position: 'Frontend-разработчик',
     profile_photo: '/assets/profile_photo.png',
     profile_photo_alt: 'Фронтенд-разработчик, фото в резюме',
-    download_pdf: 'Скачать PDF',
     contacts: [
       { label: 'T', text: '+375 29 991-40-17', href: 'tel:+375299914017' },
       {
