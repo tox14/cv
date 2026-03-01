@@ -33,18 +33,47 @@
         </div>
       </div>
 
-      <main class="block">
-        <div class="block__left block__left--bordered">
-          <p class="location-country">
-            <img src="/assets/location_icon.svg" alt="" aria-hidden="true" />
-            {{ data[lang].location.country }}
-          </p>
-          <p class="location-city">{{ data[lang].location.city }}</p>
-        </div>
-        <section class="block__right">
-          <h2 class="block__title">{{ data[lang].about.title }}</h2>
-          <p class="block__text">{{ data[lang].about.text }}</p>
+      <main>
+        <section class="block" style="margin: 40px 0 50px;">
+          <div class="block__left block__left--bordered">
+            <p class="location-country">
+              <img src="/assets/location_icon.svg" alt="" aria-hidden="true" />
+              {{ data[lang].location.country }}
+            </p>
+            <p class="location-city">{{ data[lang].location.city }}</p>
+          </div>
+          <div class="block__right">
+            <h2 class="block__title">{{ data[lang].about.title }}</h2>
+            <p class="block__text">{{ data[lang].about.text }}</p>
+          </div>
         </section>
+
+        <section class='block' style="margin-bottom: 20px">
+          <div class="block__left">
+            <h2 class="block__title">{{ data[lang].skills_label }}</h2>
+          </div>
+          <div class="block__right">
+            <h2 class="block__title">{{ data[lang].experience_label }}</h2>
+          </div>
+        </section>
+
+        {% for experience in data[lang].experience %}
+          <section class='block'>
+            <div class="block__left block__left--bordered">
+              {% if experience.hook %}
+                <h2 class="block__subtitle">{{ experience.hook | safe }}</h2>
+              {% endif %}
+              {% for skill in experience.skills %}
+                <p class="block__text">{{ skill }}</p>
+              {% endfor %}
+            </div>
+            <div class="block__right">
+              <h3 class="block__subtitle block__subtitle--point">{{ experience.company_name }}</h3>
+              <h4 class="block__subtitle">{{ experience.position }} | {{ experience.period }}</h4>
+              <div class="block__text">{{ experience.description | safe }}</div>
+            </div>
+          </section>
+        {% endfor %}
       </main>
     </div>
 
