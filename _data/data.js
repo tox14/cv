@@ -14,9 +14,9 @@ export default {
         href: 'mailto:a.chernookiy@yandex.ru',
       },
       {
-        label: 'W',
-        text: 'www.antonchernookiy.by',
-        href: 'https://www.antonchernookiy.by',
+        label: 'T',
+        text: 't.me/tox14',
+        href: 'https://t.me/tox14',
       },
     ],
     location: {
@@ -25,7 +25,7 @@ export default {
     },
     about: {
       title: 'Profile',
-      text: "Developing web interfaces is my hobby and my passion. I'm focused on quality and speed of development. I love doing pixel-perfect markup. I enjoy bringing the client's wishes and the designer's vision to life in real interfaces that people use.",
+      text: "Web interface development is my hobby and my passion. I focus on quality and development speed. I follow AI advancements and use LLM code generation models to accelerate development. I love pixel-perfect layouts. I enjoy bringing the client's wishes and the designer's vision to life in real interfaces that people actually use.",
     },
     skills_label: 'Skills',
     experience_label: 'Experience',
@@ -33,9 +33,9 @@ export default {
       {
         company_name: 'Elinext',
         position: 'Frontend Engineer',
-        period: '11.2019 - present',
+        period: '10.2019 - present',
         description:
-          'I develop web applications for businesses in the public transportation and smart city management sectors. My work includes public transport management and monitoring, fare collection control, parking payment management and monitoring, as well as remote configuration and management of ticket vending machines (TVMs).<br/>I have experience developing applications for Ticket Vending Machines, working with both frontend and backend using React and Node.js (Express). I integrate Node.js with hardware devices, such as NFC readers and payment terminals. I actively participate in making technical decisions and selecting appropriate solutions.<br/>I introduced unit testing (Jest) and screenshot testing for components (Storybook), ensuring the most critical features in the project are covered by tests. Additionally, I implemented code linting and automatic formatting based on our code style using ESLint and Prettier, and set up CI/CD pipelines.<br/>I am also actively involved in code refactoring and conducting code reviews.<br/><br/><br/>',
+          'I worked on business web applications for the public transport and smart city management domain, including public transport management and monitoring, fare media validation, parking payment management/monitoring, and remote configuration and management of ticket sales terminals. I also have experience developing an application for a Ticket Vending Machine (TVM). I gained hands-on experience with React and Node.js (Express), writing both frontend and backend code. I integrate Node.js with hardware devices such as an NFC reader and a payment terminal. I actively participated in selecting technical solutions. I introduced unit testing practices (Jest) and component screenshot/visual regression testing (Storybook), covering the most critical features with tests. I introduced linting and automatic code formatting based on the agreed code style (ESLint/Prettier). I set up CI/CD. I actively contribute to code refactoring and code reviews.<br/><br/><br/>',
         hook: '8 years of <br/>professional',
         skills: [
           'Git',
@@ -55,7 +55,7 @@ export default {
         position: 'Fullstack Developer',
         period: '01.2018 - 10.2019',
         description:
-          'Developed websites for clients, including landing pages, corporate websites, and e-commerce stores. Built approximately 30 websites and web applications from scratch. Focused on reducing the development time for business features and improved multitasking skills. Maintained existing projects by resolving optimization issues and refactoring significant amounts of legacy code. Developed the core of a new corporate CMS to replace the existing one. Implemented features include:<ul><li>Authorization/authentication module;</li><li>Website page builder;</li><li>Customizable dashboard for displaying key metrics with charts and graphs;</li><li>Service booking/scheduling module with an interactive calendar.</li></ul>Onboarding and mentoring of junior colleagues.',
+          'Developed websites for clients: landing pages, business card sites, and online stores. Built approximately 30 websites and web applications from scratch. Worked on reducing development time for business features and developed multitasking skills. Supported existing projects: handled optimization and refactoring of large volumes of legacy code. Onboarding and mentoring of junior colleagues. Developed the core of a new corporate CMS to replace the existing one. Implemented features:<ul><li>Authorization/authentication module;</li><li>Website page builder;</li><li>Customizable dashboard for displaying key metrics with charts and graphs;</li><li>Booking/appointment module with an interactive calendar.</ul>',
         hook: null,
         skills: [
           'Git',
@@ -105,9 +105,9 @@ export default {
         href: 'mailto:a.chernookiy@yandex.ru',
       },
       {
-        label: 'C',
-        text: 'www.antonchernookiy.by',
-        href: 'https://www.antonchernookiy.by',
+        label: 'Т',
+        text: 't.me/tox14',
+        href: 'https://t.me/tox14',
       },
     ],
     location: {
@@ -116,18 +116,18 @@ export default {
     },
     about: {
       title: 'Oбо мне',
-      text: 'Разработка веб-интерфейсов - это моё хобби и моя страсть. Сосредоточен на качестве и скорости разработки. Люблю верстать в стиле pixel-perfect. Мне нравится воплощать желания заказчика и видение дизайнера в реальных интерфейсах, которыми пользуются люди.',
+      text: 'Разработка веб-интерфейсов - это моё хобби и моя страсть. Сосредоточен на качестве и скорости разработки. Слежу за развитием AI, использую LLM модели генерации кода для ускорения разработки. Люблю верстать в стиле pixel-perfect. Мне нравится воплощать желания заказчика и видение дизайнера в реальных интерфейсах, которыми пользуются люди.',
     },
     skills_label: 'Скилы',
     experience_label: 'Опыт',
     experience: [
       {
-        company_name: 'Name of company',
-        position: 'Frontend Developer',
-        period: '2019 - present',
+        company_name: 'Elinext',
+        position: 'Frontend Engineer',
+        period: '10.2019 - По настоящее время',
         description:
-          "Developing web interfaces is my hobby and my passion. I'm focused on quality and speed of development. I love doing pixel-perfect markup. I enjoy bringing the client's wishes and the designer's vision to life in real interfaces that people use.",
-        hook: '10 years of <br/>professional',
+          'Занимался разработкой веб-приложений для бизнеса в сфере общественного транспорта и управления современным городом (управление и мониторинг общественного транспорта, контроль проездных документов, управление/мониторинг оплаты парковок, удаленная настройка и управление терминалами по продаже билетов). Есть опыт разработки приложения для Ticket Vending Machine. Получил опыт работы с React + Node.js (Express). Писал код для frontend и backend. Занимаюсь интеграцией Node.js с hardware девайсами, такими как: ридер NFC, платежный терминал. Принимал активное участие в выборе технических решений. Внедрил практику написания unit-тестов (Jest), скриншотного тестирования компонентов (Storybook), покрыл тестами самые важные фичи в проекте. Внедрил инструмент линтинга и автоматического форматирования кода на основании код стайла (ESlint/Prettier). Настроил работу CI/CD. Принимаю активное участие в рефакторинге кода и проведении код-ревью.<br/><br/><br/>',
+        hook: '8 лет<br/>коммерческого опыта',
         skills: [
           'HTML',
           'CSS',
@@ -141,10 +141,10 @@ export default {
       },
       {
         company_name: 'Advansys Ecommerce Solutions',
-        position: 'Фронтенд-разработчик',
+        position: 'Fullstack Developer',
         period: '01.2018 - 10.2019',
         description:
-          'Разработка сайтов для заказчиков: лендинги, сайты-визитки, интернет-магазины. C нуля разработано около 30 сайтов и веб-приложений. Работал над сокращением времени на разработку бизнес-фич и развивал навык многозадачности. Поддержка существующих проектов: решал задачи оптимизации и рефакторинга большого количества легаси-кода. Разработка core для новой корпоративной CMS на замену старой. Реализованные фичи:<ul> <li>Модуль авторизации/аутентификации;</li> <li>Конструктор страниц сайта;</li> <li>Настраиваемый дашборд для отображения важных метрик с диаграммами и графиками;</li> <li>Модуль бронирования / записи на услуги с интерактивным календарем.</li> </ul> <br/> Онбординг и менторство младших коллег.',
+          'Разработка сайтов для заказчиков: лендинги, сайты-визитки, интернет-магазины. C нуля разработано около 30 сайтов и веб-приложений. Работал над сокращением времени на разработку бизнес-фич и развивал навык многозадачности. Поддержка существующих проектов: решал задачи оптимизации и рефакторинга большого количества легаси-кода. Онбординг и менторство младших коллег. Разработка core для новой корпоративной CMS на замену старой. Реализованные фичи:<ul><li>Модуль авторизации/аутентификации;</li><li>Конструктор страниц сайта;</li><li>Настраиваемый дашборд для отображения важных метрик с диаграммами и графиками;</li><li>Модуль бронирования / записи на услуги с интерактивным календарем.</li></ul>',
         hook: null,
         skills: [
           'Git',
