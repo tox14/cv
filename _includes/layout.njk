@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="{{ lang }}">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>{{ data[lang].title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles.css"/>
   </head>
   <body>
     <div class="container">
       <header class="block">
-        <div class="block__left block__left--bordered">
+        <div class="block__left bordered">
           <h2 class="document-type">{{ data[lang].resume }}</h2>
         </div>
         <div class="block__right">
@@ -32,12 +32,11 @@
           </div>
         </div>
       </div>
-
       <main>
         <section class="block" style="margin: 40px 0 50px;">
-          <div class="block__left block__left--bordered">
+          <div class="block__left bordered">
             <p class="location-country">
-              <img src="/assets/location_icon.svg" alt="" aria-hidden="true" />
+              <img src="/assets/location_icon.svg" alt="" aria-hidden="true"/>
               {{ data[lang].location.country }}
             </p>
             <p class="location-city">{{ data[lang].location.city }}</p>
@@ -47,7 +46,6 @@
             <p class="block__text">{{ data[lang].about.text }}</p>
           </div>
         </section>
-
         <section class='block' style="margin-bottom: 20px">
           <div class="block__left">
             <h2 class="block__title">{{ data[lang].skills_label }}</h2>
@@ -56,10 +54,9 @@
             <h2 class="block__title">{{ data[lang].experience_label }}</h2>
           </div>
         </section>
-
         {% for experience in data[lang].experience %}
           <section class='block'>
-            <div class="block__left block__left--bordered">
+            <div class="block__left bordered">
               {% if experience.hook %}
                 <h2 class="block__subtitle">{{ experience.hook | safe }}</h2>
               {% endif %}
@@ -74,9 +71,30 @@
             </div>
           </section>
         {% endfor %}
+        <section class='block' style="margin: 50px 0 20px">
+          <div class="block__left">
+            <h2 class="block__title">{{ data[lang].languages.label }}</h2>
+          </div>
+          <div class="block__right">
+            <h2 class="block__title">{{ data[lang].education.label }}</h2>
+          </div>
+        </section>
+        <section class='block'>
+          <div class="block__left bordered">
+            {% for language in data[lang].languages.items %}
+              <p class='block__text bordered'>{{ language.name }} ({{ language.level }})</p>
+            {% endfor %}
+          </div>
+          <div class="block__right" style="padding-bottom: 60px">
+            {% for education in data[lang].education.items %}
+              <h3 class='block__subtitle block__subtitle--point'>{{ education.name }}</h3>
+              <h3 class='block__subtitle'>{{ education.period }}</h3>
+              <div class="block__text">{{ education.description | safe }}</div>
+            {% endfor %}
+          </div>
+        </section>
       </main>
     </div>
-
     <div class="action-panel">
       <div class="language-switch">
         {% for code, value in data %}
@@ -84,7 +102,7 @@
         {% endfor %}
       </div>
       <button id="download-pdf" class="download-btn">
-        <img src="/assets/download_icon.svg" alt="PDF" aria-hidden="true" />
+        <img src="/assets/download_icon.svg" alt="PDF" aria-hidden="true"/>
         <span>PDF</span>
       </button>
     </div>

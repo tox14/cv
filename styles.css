@@ -50,7 +50,19 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 60px 100px;
+  padding: 60px 60px 0;
+}
+
+.bordered::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 100%;
+  background-color: #1b1b1b;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .block {
@@ -66,18 +78,6 @@ body {
   text-align: right;
   position: relative;
   padding-right: 60px;
-}
-
-.block__left--bordered::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 2px;
-  height: 100%;
-  background-color: #1b1b1b;
-  top: 0;
-  bottom: 0;
-  right: 0;
 }
 
 .block__right {

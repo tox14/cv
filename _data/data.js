@@ -71,6 +71,24 @@ export default {
         ],
       },
     ],
+    languages: {
+      label: 'Languages',
+      items: [
+        { name: 'Russian', level: 'Native' },
+        { name: 'English', level: 'Advanced' },
+      ],
+    },
+    education: {
+      label: 'Education',
+      items: [
+        {
+          name: 'Baranavichy State University',
+          period: '09.2013 - 07.2017',
+          description:
+            'Degree in Information Systems and Technologies.<br/>During my studies, I specialized in web development, deeply studying the processes of creating modern websites. As part of my graduation project, I successfully designed and developed a corporate website for an IT company. While implementing this project, I used a relevant technology stack, including the Webpack module bundler for resource optimization, JavaScript with the jQuery library for interactivity, the Sass preprocessor for structuring styles, and PHP for server-side logic. This experience allowed me to consolidate practical skills in the full development cycle, from architecture design to final deployment.',
+        },
+      ],
+    },
   },
   ru: {
     title: 'CV - Портфолио',
@@ -142,5 +160,23 @@ export default {
         ],
       },
     ],
+    languages: {
+      label: 'Языки',
+      items: [
+        { name: 'Русский', level: 'Нативный' },
+        { name: 'Английский', level: 'A1' },
+      ],
+    },
+    education: {
+      label: 'Образование',
+      items: [
+        {
+          name: 'Барановичский государственный университет',
+          period: '09.2013 - 07.2017',
+          description:
+            'Специальность "Информационные системы и технологии".<br/>Во время обучения специализировался на веб-разработке, углубленно изучая процессы создания современных сайтов. В рамках дипломного проекта успешно спроектировал и разработал корпоративный веб-сайт для компании, работающей в сфере информационных технологий. При реализации этого проекта применял актуальный стек технологий, включая сборщик модулей Webpack для оптимизации ресурсов, JavaScript с использованием библиотеки jQuery для интерактивности, препроцессор Sass для структурирования стилей и PHP для серверной логики. Этот опыт позволил мне закрепить практические навыки полного цикла разработки от проектирования архитектуры до финального деплоя.',
+        },
+      ],
+    },
   },
 };

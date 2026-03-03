@@ -15,10 +15,10 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addTransform('htmlmin', function (content) {
     if (this.outputPath && this.outputPath.endsWith('.html')) {
-      if (content.includes('<link rel="stylesheet" href="/styles.css" />')) {
+      if (content.includes('<link rel="stylesheet" href="/styles.css"/>')) {
         const cssContent = readFileSync('styles.css', 'utf-8');
         content = content.replace(
-          '<link rel="stylesheet" href="/styles.css" />',
+          '<link rel="stylesheet" href="/styles.css"/>',
           `<style>\n${cssContent}\n    </style>`
         );
       }
