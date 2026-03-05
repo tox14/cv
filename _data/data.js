@@ -1,6 +1,6 @@
 export default {
   en: {
-    title: 'CV - Portfolio',
+    title: 'Anton Chernookiy CV',
     resume: 'Resume',
     name: 'Anton Chernookiy',
     position: 'Frontend Developer',
@@ -90,7 +90,7 @@ export default {
     },
   },
   ru: {
-    title: 'CV - Портфолио',
+    title: 'Антон Черноокий - Резюме',
     resume: 'Резюме',
     name: 'Антон Черноокий',
     position: 'Frontend-разработчик',
