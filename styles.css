@@ -332,3 +332,11 @@ body {
   height: 18px;
 }
 /*#endregion */
+
+/*#region Print styles */
+@media print {
+  .action-panel {
+    display: none !important;
+  }
+}
+/*#endregion */
