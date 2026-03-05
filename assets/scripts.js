@@ -55,14 +55,9 @@ const ensurePdfLibrariesLoaded = async () => {
 const generateAndDownloadPDF = async function () {
   const btn = this;
   btn.disabled = true;
-  const originalText = btn.querySelector('span').textContent;
-  btn.querySelector('span').textContent = pdfLibrariesLoaded
-    ? 'Generating...'
-    : 'Loading...';
 
   try {
     await ensurePdfLibrariesLoaded();
-    btn.querySelector('span').textContent = 'Generating...';
 
     const actionPanel = document.querySelector('.action-panel');
     const container = document.querySelector('.container');
@@ -108,7 +103,6 @@ const generateAndDownloadPDF = async function () {
     alert('Error generating PDF');
   } finally {
     btn.disabled = false;
-    btn.querySelector('span').textContent = originalText;
   }
 };
 
