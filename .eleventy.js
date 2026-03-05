@@ -7,6 +7,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('**/*.png');
   eleventyConfig.addPassthroughCopy('**/*.svg');
+  eleventyConfig.addPassthroughCopy('assets/**/*.js');
 
   eleventyConfig.addPlugin(I18nPlugin, {
     defaultLanguage: 'ru',

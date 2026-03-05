@@ -46,7 +46,7 @@
             <p class="block__text">{{ data[lang].about.text }}</p>
           </div>
         </section>
-        <section class='block' style="margin-bottom: 20px">
+        <section class='block' style="margin-bottom: 10px">
           <div class="block__left">
             <h2 class="block__title">{{ data[lang].skills_label }}</h2>
           </div>
@@ -71,7 +71,7 @@
             </div>
           </section>
         {% endfor %}
-        <section class='block' style="margin: 50px 0 20px">
+        <section class='block' style="margin: 50px 0 10px">
           <div class="block__left">
             <h2 class="block__title">{{ data[lang].languages.label }}</h2>
           </div>
@@ -85,7 +85,7 @@
               <p class='block__text bordered'>{{ language.name }} ({{ language.level }})</p>
             {% endfor %}
           </div>
-          <div class="block__right" style="padding-bottom: 60px">
+          <div class="block__right">
             {% for education in data[lang].education.items %}
               <h3 class='block__subtitle block__subtitle--point'>{{ education.name }}</h3>
               <h3 class='block__subtitle'>{{ education.period }}</h3>
@@ -101,10 +101,11 @@
           <a class="language-switch__option{% if lang == code %} active{% endif %}" href="/{{ code }}/">{{ code | upper }}</a>
         {% endfor %}
       </div>
-      <button id="download-pdf" class="download-btn">
+      <button id="download-pdf" class="download-btn" data-file-name="{{ data[lang].name }}_CV.pdf">
         <img src="/assets/download_icon.svg" alt="PDF" aria-hidden="true"/>
         <span>PDF</span>
       </button>
     </div>
+    <script src="/assets/scripts.js" defer></script>
   </body>
 </html>
