@@ -1,6 +1,8 @@
 export default {
   en: {
     title: 'Anton Chernookiy CV',
+    description:
+      'Experienced Frontend Developer with 8+ years building modern web applications. Specializing in React, Next.js, TypeScript, and Node.js. View my portfolio and download my CV.',
     resume: 'Resume',
     name: 'Anton Chernookiy',
     position: 'Frontend Developer',
@@ -91,6 +93,8 @@ export default {
   },
   ru: {
     title: 'Антон Черноокий - Резюме',
+    description:
+      'Опытный Frontend-разработчик с 8+ годами опыта создания современных веб-приложений. Специализация: React, Next.js, TypeScript, Node.js. Просмотрите портфолио и скачайте резюме.',
     resume: 'Резюме',
     name: 'Антон Черноокий',
     position: 'Frontend-разработчик',
