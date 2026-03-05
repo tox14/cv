@@ -4,7 +4,7 @@ export default {
     resume: 'Resume',
     name: 'Anton Chernookiy',
     position: 'Frontend Developer',
-    profile_photo: '/assets/profile_photo.png',
+    profile_photo: '/assets/images/profile_photo.png',
     profile_photo_alt: 'Frontend Developer CV profile photo',
     contacts: [
       { label: 'P', text: '+375 29 991-40-17', href: 'tel:+375299914017' },
@@ -98,7 +98,7 @@ export default {
     resume: 'Резюме',
     name: 'Антон Черноокий',
     position: 'Frontend-разработчик',
-    profile_photo: '/assets/profile_photo.png',
+    profile_photo: '/assets/images/profile_photo.png',
     profile_photo_alt: 'Фронтенд-разработчик, фото в резюме',
     contacts: [
       { label: 'T', text: '+375 29 991-40-17', href: 'tel:+375299914017' },
