@@ -23,7 +23,12 @@
       </header>
       <div class="block">
         <div class="block__left">
-          <img class="document-photo" src="{{ data[lang].profile_photo }}" alt="{{ data[lang].profile_photo_alt }}"/>
+          <picture>
+            {% for image in data[lang].photo.sources %}
+              <source srcset="{{ image.src }}" type="{{ image.type }}">
+            {% endfor %}
+            <img class="document-photo" src="{{ data[lang].photo.default_src }}" alt="{{ data[lang].photo.alt }}">
+          </picture>
         </div>
         <div class="block__right">
           <div class="contacts">
