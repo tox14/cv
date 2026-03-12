@@ -6,6 +6,7 @@ export default {
     resume: 'Resume',
     name: 'Anton Chernookiy',
     position: 'Frontend Developer',
+    pdf_name: 'Anton Chernookiy CV',
     photo: {
       sources: [
         { type: 'image/webp', src: '/assets/images/profile_photo.avif' },
@@ -104,6 +105,7 @@ export default {
     resume: 'Резюме',
     name: 'Антон Черноокий',
     position: 'Frontend-разработчик',
+    pdf_name: 'Антон Черноокий CV',
     photo: {
       sources: [
         { type: 'image/webp', src: '/assets/images/profile_photo.avif' },

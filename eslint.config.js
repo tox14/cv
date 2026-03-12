@@ -10,10 +10,11 @@ export default [
   prettier,
   {
     languageOptions: {
-      ecmaVersion: 12,
+      ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
         ...globals.browser,
+        ...globals.node,
       },
     },
   },

@@ -109,11 +109,10 @@
           <a class="language-switch__option{% if lang == code %} active{% endif %}" href="/{{ code }}/">{{ code | upper }}</a>
         {% endfor %}
       </div>
-      <button id="download-pdf" class="download-btn" data-file-name="{{ data[lang].name }}_CV.pdf">
+      <a href="/assets/output/{{ data[lang].pdf_name }}.pdf" download class="download-btn">
         <img src="/assets/images/download_icon.svg" alt="PDF" aria-hidden="true"/>
         <span>PDF</span>
-      </button>
+      </a>
     </div>
-    <script src="/assets/scripts.js" defer></script>
   </body>
 </html>

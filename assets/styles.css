@@ -313,6 +313,7 @@ body {
   cursor: pointer;
   transition: var(--action-transition);
   box-shadow: var(--action-shadow);
+  text-decoration: none;
 }
 
 .download-btn:hover {
