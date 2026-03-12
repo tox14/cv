@@ -9,7 +9,7 @@
   --action-bg: var(--color-primary);
   --action-border-radius: 10px;
   --action-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  --action-font-size: 11pt;
+  --action-font-size: 0.6875rem;
   --action-font-weight: 600;
   --action-option-border-radius: 6px;
   --action-transition: all 0.25s ease;
@@ -68,7 +68,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 50px 0;
+  padding: 50px;
 }
 
 .bordered::after {
@@ -108,7 +108,7 @@ body {
 
 .document-type {
   text-transform: uppercase;
-  font-size: 11pt;
+  font-size: 0.6875rem;
   font-weight: 500;
   color: var(--color-secondary);
   letter-spacing: 7px;
@@ -133,7 +133,7 @@ body {
 }
 
 .document-title {
-  font-size: 40pt;
+  font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: -3px;
   line-height: 1;
@@ -142,7 +142,7 @@ body {
 }
 
 .document-position {
-  font-size: 14pt;
+  font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -161,7 +161,7 @@ body {
   position: relative;
   color: var(--color-primary);
   text-decoration: none;
-  font-size: 12pt;
+  font-size: 0.75rem;
 }
 
 .contact-item::before {
@@ -176,7 +176,7 @@ body {
   transform: translateY(-50%);
   background-color: var(--color-primary);
   color: var(--color-white);
-  font-size: 10pt;
+  font-size: 0.625rem;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -186,7 +186,7 @@ body {
 .location-country {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 16pt;
+  font-size: 1rem;
   line-height: 1;
   letter-spacing: 3px;
   display: flex;
@@ -202,7 +202,7 @@ body {
 .location-city {
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 15pt;
+  font-size: 0.9375rem;
   letter-spacing: 1px;
   color: var(--color-secondary);
 }
@@ -210,7 +210,7 @@ body {
 .block__title {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 22pt;
+  font-size: 1.375rem;
   line-height: 1;
   letter-spacing: 3px;
   margin-top: -6px;
@@ -219,7 +219,7 @@ body {
 
 .block__text {
   font-weight: 400;
-  font-size: 11pt;
+  font-size: 0.6875rem;
   color: var(--color-secondary);
   line-height: 1.5;
 }
@@ -233,7 +233,7 @@ body {
   position: relative;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 14pt;
+  font-size: 0.875rem;
   line-height: 1;
   margin-top: -2px;
   margin-bottom: 7px;
@@ -335,6 +335,24 @@ body {
 
 /*#region Print styles */
 @media print {
+  html {
+    font-size: 13.5px;
+  }
+
+  .container {
+    padding-bottom: 0;
+  }
+
+  .document-title {
+    font-size: 3rem;
+  }
+
+  .contact-item::before {
+    width: 22px;
+    height: 22px;
+    left: -42px;
+  }
+
   .action-panel {
     display: none !important;
   }
